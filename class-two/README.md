@@ -1,3 +1,3 @@
 ## Components ##
-### Adding Css inside annotation's styles ###
-> see example in: app.component.ts 
+### Adding app-services as an attribute inside annotation's selector ###
+> see example in: app.servers.ts (line 4) && div inside app.component.html (line 11)
