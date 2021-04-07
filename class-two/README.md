@@ -1,3 +1,3 @@
 ## Data Biding ##
 ## Event Binding ##
-> servers.component.html (line 11, between line 20 an 22) && servers.component.ts (line 7 and 9)
+> servers.component.html (lines 11, 25 and 26) && servers.component.ts (between lines 3 to 10 and line 19)

@@ -1,6 +1,13 @@
 <h4>- Servers Component</h4> 
 <hr>
-<app-server></app-server>
+<label>
+  
+  <app-server></app-server>
+</label> 
+  <input type="text" 
+  class="form-control"
+  (input)="onUpdateServerName($event)">
+
 <hr>
 <button 
 class="btn btn-primary"
@@ -8,4 +15,6 @@ class="btn btn-primary"
 [disabled]="!allowNewServer">Add Server</button>
 <p>{{serverCreationStatus}}</p>
 <!-- <p [innerText]="allowNewServer"></p> -->
+<hr>
+<h4>{{serverName}}</h4> 
 <hr>
