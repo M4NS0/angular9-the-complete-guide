@@ -1,3 +1,10 @@
 ## Data Biding ##
-## Passing data and using it with Event Binding ##
-> servers.component.html (lines 11, 25 and 26) && servers.component.ts (between lines 3 to 10 and line 19)
+## Two way data binding  ##
+> Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel  
+> directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+> You then also need to add the import from @angular/forms  in the app.module.ts file:
+```ts
+import { FormsModule } from '@angular/forms'; 
+```
+### Changes on: ###
+> servers.component.html (26) && servers.component.ts (lines 25 and 26)

@@ -1,20 +1,37 @@
-<h4>- Servers Component</h4> 
+<h4>- Servers Component</h4>
 <hr>
 <label>
-  
   <app-server></app-server>
-</label> 
-  <input type="text" 
-  class="form-control"
-  (input)="onUpdateServerName($event)">
+</label>
+
+<input 
+type="text" 
+class="form-control" 
+(input)="onUpdateServerName($event)">
+
+<div> <i> Using Event binding </i> 
+  <span class="glyphicon glyphicon-arrow-up"></span>
+</div>
+
+<br/>
+
+<div>
+  <span class="glyphicon glyphicon-arrow-down">
+  </span> <i> Using Two-way binding </i> 
+</div>
+
+<input 
+type="text" 
+class="form-control" 
+[(ngModel)]="serverName">
 
 <hr>
 <button 
-class="btn btn-primary"
-(click)="onCreateServer()"
+class="btn btn-primary" 
+(click)="onCreateServer()" 
 [disabled]="!allowNewServer">Add Server</button>
 <p>{{serverCreationStatus}}</p>
 <!-- <p [innerText]="allowNewServer"></p> -->
 <hr>
-<h4>{{serverName}}</h4> 
+<h4>{{serverName}}</h4>
 <hr>
