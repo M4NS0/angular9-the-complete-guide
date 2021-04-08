@@ -1,4 +1,4 @@
-## *ngIf and Else ##
+## ngStyle - Styling elements Dinamically ##
 
 ### Changes on: ###
-> servers.component.html (starting at line 41) 
+> server.component.html (line 1)  && server.component.ts (lines 12 to 14 and 19 to 24)
