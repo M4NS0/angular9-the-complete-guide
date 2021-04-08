@@ -1,5 +1,5 @@
 ## Data Biding ##
-## *ngIf to Output Data ##
+## *ngIf and Else ##
 
 ### Changes on: ###
-> servers.component.html (starting at line 24) && servers.component.ts (lines 13 and 23)
+> servers.component.html (starting at line 41) 
