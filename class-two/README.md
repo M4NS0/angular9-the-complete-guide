@@ -1,4 +1,4 @@
-## ngClass - Applying CSS Classes Dinamically ##
+## ngFor - Outputting Lists ##
 
 ### Changes on: ###
-> server.component.html (line 1 to 5)  && server.component.css (lines 9 to 16)
+> servers.component.html (first lines move to bottom, now at lines 42 to 45)  && servers.component.ts (lines 14 and 26)

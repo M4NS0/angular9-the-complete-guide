@@ -1,9 +1,3 @@
-<h4>Servers Component</h4>
-<hr>
-<label>
-  <app-server></app-server>
-</label>
-
 <input 
 type="text" 
 class="form-control" 
@@ -44,10 +38,18 @@ class="form-control"
   </tbody>
 </div>
 
+
+<hr>
+<label>
+  <app-server *ngFor="let server of servers"></app-server>
+</label>
+
 <!-- <p>{{serverCreationStatus}}</p> -->
 <!-- <p [innerText]="allowNewServer"></p> -->
 
-<div *ngIf="serverCreated === true; else noserver">
+
+
+<!-- <div *ngIf="serverCreated === true; else noserver">
   <hr>
   <h4>{{serverName}}</h4>
   <hr>
@@ -60,4 +62,6 @@ class="form-control"
     <span> <i>No server</i></span>
   </h4>
   <hr>
-</ng-template>
+</ng-template> -->
+
+
