@@ -1,4 +1,3 @@
-## Data Biding ##
 ## *ngIf and Else ##
 
 ### Changes on: ###
