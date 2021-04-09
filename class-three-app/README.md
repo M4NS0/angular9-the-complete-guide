@@ -1,5 +1,6 @@
-## Adding components to the project ##
+# Recipes and Shopping List #
 
+## Adding components to the Project ##
 ```sh
     ng g c component-name/nested-component-name
 ```
