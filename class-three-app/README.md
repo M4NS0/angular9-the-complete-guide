@@ -1,10 +1,9 @@
-## Adding Content to the Recipes List Component ##
+## Output a List of Recipes with ngFor ##
 
 ### Addings: ###
 --
 
 ### Changes on: ###
 ```sh
-recipe-list.components.ts # Line 10 to 14
-recipe.list.component # Line 6 to 17
+recipe-list.component.html # Line 7 to 29
 ```
