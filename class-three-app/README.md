@@ -1,10 +1,10 @@
-## Dom's initial addings && Navigation bar ##
+## Creating a recipe model ##
 
+### Addings: ###
+```sh
+/recipes.module.ts
+```
 ### Changes on: ###
-
-
-> app.component.html
-> shopping-list.component.html
-> header.component.html 
-> recipes.component.html
-> recipe-list.component.html
+```sh
+recipe-list.components.ts # Line 9
+```
