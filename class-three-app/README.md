@@ -1,26 +1,10 @@
-## Adding components to the project ##
+## Dom's initial addings && Navigation bar ##
 
-```sh
-    ng g c component-name/nested-component-name
-```
+### Changes on: ###
 
-### Structure: ###
 
-> Header Component:
-```sh
-   /header
-```
-
-> Recipes Component:
-```sh
-  /recipes/
-  /recipes/recipes-detail
-  /recipes/recipes-list
-  /recipes/recipes-list/recipe-item
-```
-
-> Shopping list Component
-```sh
-  /shopping list
-```
-
+> app.component.html
+> shopping-list.component.html
+> header.component.html 
+> recipes.component.html
+> recipe-list.component.html
