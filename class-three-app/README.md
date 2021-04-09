@@ -1,9 +1,10 @@
-## Displaying recipe details ##
+## Working on Shopping list component ##
 
 ### Addings: ###
 --
 
 ### Changes on: ###
 ```sh
-recipe-detail.component.html 
+shopping.list.component.html # line 5 to 7
+shopping-list.component.ts # line 9
 ```
