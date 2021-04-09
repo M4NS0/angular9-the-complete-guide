@@ -1,4 +1,4 @@
-## Output a List of Recipes with ngFor ##
+## Outputing a List of Recipes with ngFor ##
 
 ### Addings: ###
 --
