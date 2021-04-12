@@ -27,6 +27,8 @@
 ### Addings: ###
 ```sh
     ng new class-five
+    npm install --save bootstrap@3
+
 ```
 
 
