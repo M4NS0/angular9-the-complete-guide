@@ -12,3 +12,11 @@
 <br/>
 <h6><p><i>Repositories above includes Branches with sub-classes</i></p></h6>
 <h6><p><i>Changes are reported inside the Readme of each sub-classes</i></p></h6>
+
+
+<h6><p>Error</p></h6>
+> An unhandled exception occurred: Cannot find module '@angular-devkit/build-angular/package.json'
+<h6><p>Fix</p></h6>
+```sh
+  npm install --save-dev @angular-devkit/build-angular
+```
