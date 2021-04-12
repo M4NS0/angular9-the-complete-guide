@@ -1,12 +1,12 @@
-## Creating Ingredient Model ##
+## Outputing shopping list ##
 
 ### Addings: ###
 ```sh
-    /recipes/shared
-    /recipes/shared/ingredient.model.ts
+    
 ```
 
 ### Changes on: ###
 ```sh
-
+    shopping-list.component.html # lines 6 to 11
+    shopping-list.component.ts # lines 10 to 14
 ```
