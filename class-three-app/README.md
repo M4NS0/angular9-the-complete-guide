@@ -1,4 +1,4 @@
-## Outputing shopping list ##
+## Adding Shopping List Edit Section ##
 
 ### Addings: ###
 ```sh
@@ -7,6 +7,5 @@
 
 ### Changes on: ###
 ```sh
-    shopping-list.component.html # lines 6 to 11
-    shopping-list.component.ts # lines 10 to 14
+    shopping-edit.component.html # Whole doc
 ```
