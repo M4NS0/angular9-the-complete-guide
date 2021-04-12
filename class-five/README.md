@@ -1,4 +1,4 @@
-## Assigning an Alias to Custom Properties ##
+## Binding to Custom Events With Output and Event Emmiter ##
 
 
 
@@ -9,6 +9,6 @@
 
 ### Changes on: ###
 ```sh
-    server-element.component.ts # line 9 # @Input(`alias`) example
-    app.component.htm # line 8
+    app.component.htm # line 9 to 26
+    cockpit.component.ts # @Output at 10 and 11, lines 20 to 30
 ```
