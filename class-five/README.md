@@ -1,4 +1,5 @@
-## Binding to Custom Properties ##
+## Assigning an Alias to Custom Properties ##
+
 
 
 ### Addings: ###
@@ -8,7 +9,6 @@
 
 ### Changes on: ###
 ```sh
-    server-element.component.ts # line 9
-    app.component.ts # line 9
+    server-element.component.ts # line 9 # Input(`alias`) example
     app.component.htm # line 8
 ```
