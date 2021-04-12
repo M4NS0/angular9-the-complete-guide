@@ -9,6 +9,6 @@
 
 ### Changes on: ###
 ```sh
-    server-element.component.ts # line 9 # Input(`alias`) example
+    server-element.component.ts # line 9 # @Input(`alias`) example
     app.component.htm # line 8
 ```
