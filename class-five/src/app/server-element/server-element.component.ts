@@ -5,11 +5,13 @@ import {
   AfterViewInit,
   Component,
   DoCheck,
+  ElementRef,
   Input,
   OnChanges,
   OnDestroy,
   OnInit,
   SimpleChanges,
+  ViewChild,
   ViewEncapsulation
 } from '@angular/core';
 
@@ -32,49 +34,54 @@ export class ServerElementComponent implements
   @Input(`srvElement`) element: { type: string, name: string, content: string };
   @Input() name: string;
   counter = 0;
+  @ViewChild('heading', { static: true }) header: ElementRef;
 
   constructor() {
     this.counter += 1;
-    console.log(this.counter + '- constructor');
+    console.log(this.counter + '- constructor\n');
   }
   ngOnChanges(changes: SimpleChanges) {
     this.counter += 1;
-    console.log(this.counter + '- gOnChanges :: called only when there is an input to the component and everytime there is a change to it');
+    console.log(this.counter + '- gOnChanges :: Called after a bound input property changes');
     console.log(changes);
   }
 
   ngOnInit(): void {
     this.counter += 1;
-    console.log(this.counter + '- ngOnInit');
+    console.log(this.counter + '- ngOnInit :: Called once the component is initialized');
+    console.log("Text Content: " + this.header.nativeElement.textContent);
+    
   }
 
   ngDoCheck() {
     this.counter += 1;
-    console.log(this.counter + '- ngDoCheck :: whenever there is a change detection')
+    console.log(this.counter + '- ngDoCheck :: Called during every change detection run')
   }
 
   ngAfterContentInit() {
     this.counter += 1;
-    console.log(this.counter + '- ngAfterContentInit');
+    console.log(this.counter + '- ngAfterContentInit :: Called after content (ng-content) has been projected into view');
   }
 
   ngAfterContentChecked() {
     this.counter += 1;
-    console.log(this.counter + '- ngAfterContentCheck :: called once after ngAfterContentInit() and everytime after ngDoCheck()');
+    console.log(this.counter + '- ngAfterContentCheck :: Called every time the projected content has been checked');
   }
 
   ngAfterViewInit() {
     this.counter += 1;
-    console.log(this.counter + '- ngAfterViewInit');
+    console.log(this.counter + '- ngAfterViewInit :: Called after the component’s view (and child views) has been initialized');
+    console.log("Text Content: " + this.header.nativeElement.textContent);
 
   }
   ngAfterViewChecked() {
     this.counter += 1;
-    console.log(this.counter + '- ngAfterViewChecked :: called once after ngAfterView() and everytime after ngDoCheck()');
+    console.log(this.counter + '- ngAfterViewChecked :: Called every time the view (and child views) have been checked');
     this.counter += 0; 
   }
   ngOnDestroy() {
     this.counter += 0; 
+    console.log(this.counter + '- ngOnDestroy :: Called once the component is about to be destroyed');
 
 
   }
