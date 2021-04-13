@@ -1,4 +1,4 @@
-## Projecting Content into Components with <ng-content> ##
+## Seeing Lifecycle hooks in Action ##
 
 
 
@@ -9,6 +9,7 @@
 
 ### Changes on: ###
 ```sh
-    server-element.component.html # comented lines && <ng-content> adition on line 8
-    app.component.html # lines 9 to 14
+    server-element.component.ts # imports between 23 and 30 && implementations between 36 to 80
+    app.component.html  # lines 6 and 7
+    app.component.ts # lines 27 to 34
 ```
