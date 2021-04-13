@@ -39,10 +39,10 @@ export class ServerElementComponent implements
   }
   ngOnChanges(changes: SimpleChanges) {
     this.counter += 1;
-    console.log(this.counter + '- gOnChanges:');
+    console.log(this.counter + '- gOnChanges :: called only when there is an input to the component and everytime there is a change to it');
     console.log(changes);
   }
-  
+
   ngOnInit(): void {
     this.counter += 1;
     console.log(this.counter + '- ngOnInit');
@@ -50,7 +50,7 @@ export class ServerElementComponent implements
 
   ngDoCheck() {
     this.counter += 1;
-    console.log(this.counter + '- ngDoCheck')
+    console.log(this.counter + '- ngDoCheck :: whenever there is a change detection')
   }
 
   ngAfterContentInit() {
@@ -60,7 +60,7 @@ export class ServerElementComponent implements
 
   ngAfterContentChecked() {
     this.counter += 1;
-    console.log(this.counter + '- ngAfterContentCheck');
+    console.log(this.counter + '- ngAfterContentCheck :: called once after ngAfterContentInit() and everytime after ngDoCheck()');
   }
 
   ngAfterViewInit() {
@@ -70,11 +70,12 @@ export class ServerElementComponent implements
   }
   ngAfterViewChecked() {
     this.counter += 1;
-    console.log(this.counter + '- ngAfterViewChecked');
-    
+    console.log(this.counter + '- ngAfterViewChecked :: called once after ngAfterView() and everytime after ngDoCheck()');
+    this.counter += 0; 
   }
   ngOnDestroy() {
-    this.counter += 1;
-    console.log(this.counter + ' - ngOnDestroy\n\n\n\n\n')    
+    this.counter += 0; 
+
+
   }
 }
