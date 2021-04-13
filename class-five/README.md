@@ -1,4 +1,4 @@
-## Assigning an Alias to Custom Event ##
+## Understanding View Encapsulation ##
 
 
 
@@ -9,6 +9,5 @@
 
 ### Changes on: ###
 ```sh
-    app.component.html # line 3 
-    cockpit.component.ts # line 11
+    server-element.component.css 
 ```
