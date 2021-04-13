@@ -1,14 +1,14 @@
-## Using Local References in Templates ##
+## Getting Access to the Template & DOM with @ViewChild ##
 
 
 
 ### Addings: ###
-```sh
-    --
+```ts
+    @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef; // For Angular 9
 ```
 
 ### Changes on: ###
 ```sh
-    cockpit.component.html # lines 4 to 9 && lines 19 and 22
-    cockpit.component.ts # lines 20,22,26 and 28
+    cockpit.component.html # lines 12 to 21
+    cockpit.component.ts # lines 14,24,30
 ```
