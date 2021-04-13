@@ -1,4 +1,4 @@
-## Binding to Custom Events With Output and Event Emmiter ##
+## Assigning an Alias to Custom Event ##
 
 
 
