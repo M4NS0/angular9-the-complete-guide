@@ -1,4 +1,4 @@
-## Understanding View Encapsulation ##
+## More on View Encapsulation ##
 
 
 
@@ -9,5 +9,6 @@
 
 ### Changes on: ###
 ```sh
-    server-element.component.css 
+    server-element.component.css # lines 5 to 7
+    server-element.component.ts # line 7
 ```
