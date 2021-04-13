@@ -1,4 +1,4 @@
-## More on View Encapsulation ##
+## Using Local References in Templates ##
 
 
 
@@ -9,6 +9,6 @@
 
 ### Changes on: ###
 ```sh
-    server-element.component.css # lines 5 to 7
-    server-element.component.ts # line 7
+    cockpit.component.html # lines 4 to 9 && lines 19 and 22
+    cockpit.component.ts # lines 20,22,26 and 28
 ```
