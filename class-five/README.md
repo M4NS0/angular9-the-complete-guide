@@ -1,14 +1,14 @@
-## Getting Access to the Template & DOM with @ViewChild ##
+## Projecting Content into Components with <ng-content> ##
 
 
 
 ### Addings: ###
-```ts
-    @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef; // For Angular 9
+```sh
+
 ```
 
 ### Changes on: ###
 ```sh
-    cockpit.component.html # lines 12 to 21
-    cockpit.component.ts # lines 14,24,30
+    server-element.component.html # comented lines && <ng-content> adition on line 8
+    app.component.html # lines 9 to 14
 ```
