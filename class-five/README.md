@@ -13,3 +13,5 @@
     app.component.html  # lines 6 and 7
     app.component.ts # lines 27 to 34
 ```
+
+![alt text](https://miro.medium.com/max/2242/1*chYLYhHmmOOj7pIUKlaMXQ.png)
