@@ -36,7 +36,9 @@ export class ServerElementComponent implements
   counter = 0;
   @ViewChild('heading', { static: true }) header: ElementRef;
 
-  constructor() {
+  constructor() { 
+    console.log("Debugging Lifecycle Hooks: \n");
+    
     this.counter += 1;
     console.log(this.counter + '- constructor\n');
   }
