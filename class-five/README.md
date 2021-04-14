@@ -1,4 +1,4 @@
-## Lifecycle hooks and Template Acess ##
+## Getting access to ng-content with @ContentChild ##
 
 
 
@@ -9,7 +9,7 @@
 
 ### Changes on: ###
 ```sh
-    server-element.component.ts # lines 37, 52, 74
-    server-element.component.html # line 2
+    server-element.component.ts # lines 39, 57 and 68
+    app.component.html # line 10
 
 ```

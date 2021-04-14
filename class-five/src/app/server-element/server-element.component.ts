@@ -4,6 +4,7 @@ import {
   AfterViewChecked,
   AfterViewInit,
   Component,
+  ContentChild,
   DoCheck,
   ElementRef,
   Input,
@@ -35,12 +36,13 @@ export class ServerElementComponent implements
   @Input() name: string;
   counter = 0;
   @ViewChild('heading', { static: true }) header: ElementRef;
+  @ContentChild('contentParagraph', { static: true }) paragraph: ElementRef;
 
   constructor() { 
     console.log("Debugging Lifecycle Hooks: \n");
-    
     this.counter += 1;
     console.log(this.counter + '- constructor\n');
+
   }
   ngOnChanges(changes: SimpleChanges) {
     this.counter += 1;
@@ -52,7 +54,7 @@ export class ServerElementComponent implements
     this.counter += 1;
     console.log(this.counter + '- ngOnInit :: Called once the component is initialized');
     console.log("Text Content: " + this.header.nativeElement.textContent);
-    
+    console.log('Text Content of paragraph: ' + this.paragraph.nativeElement.textContent);  
   }
 
   ngDoCheck() {
@@ -63,6 +65,7 @@ export class ServerElementComponent implements
   ngAfterContentInit() {
     this.counter += 1;
     console.log(this.counter + '- ngAfterContentInit :: Called after content (ng-content) has been projected into view');
+    console.log('Text Content of paragraph: ' + this.paragraph.nativeElement.textContent);
   }
 
   ngAfterContentChecked() {
