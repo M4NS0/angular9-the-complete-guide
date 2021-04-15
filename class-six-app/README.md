@@ -1,17 +1,14 @@
 ## Header navigation with Event Binding and *ngIf ##
 
-
+### Changes on: ###
+```sh
+    modified:   src/app/recipes/recipe-list/recipe-item/recipe-item.component.html  # ngIf removed from line 1 and placed on line 27 on recipe-list.component.html
+    modified:   src/app/recipes/recipe-list/recipe-item/recipe-item.component.ts    # @Input at line 10
+    modified:   src/app/recipes/recipe-list/recipe-list.component.html              # comented code moved to recipe-item.component.html # modification at lines 27 and 28
+    
+```
 
 ### Addings: ###
 ```sh
-
-```
-
-### Changes on: ###
-```sh
-    header.component.html # lines 13 and 14
-    header.component.ts # lines 10, 17 to 19
-    app.component.html # line 1
-    app.component.ts # lines 9 to 13
 
 ```
