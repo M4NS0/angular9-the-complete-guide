@@ -4,11 +4,14 @@
 <h6><p><i> reactive web apps with the successor of Angular.js </i></p></h6>
 <br/>
 
-| Class   | Description                                    |
-| ------- | ---------------------------------------------- |
-| Class-2 | Example project using Angular Fundamentals     |
-| Class-3 | Begining of Restaurant + Shopping List Project |
-| Class-4 | Debugging in Angular - no Code avaliable |
+| Class                          | Description                                           |
+| ------------------------------ | ----------------------------------------------------- |
+| Class-two                      | Example Project part I - using Angular Fundamentals   |
+| Class-three                    | Begining of Restaurant + Shopping List Project        |
+| Class-four                     | Debugging in Angular - no Code avaliable              |
+| Class-five                     | Components & Databinding Deep Dive                    |
+| Class-five-assignment-solution | Assignment Solution                                   |
+| Class-six                      | Example Project part II - Components and data Binding |
 
 <br/>
 <h6><p><i>Repositories above includes Branches with sub-classes</i></p></h6>
