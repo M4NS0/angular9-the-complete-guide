@@ -28,3 +28,17 @@
 ```sh
   npm install --save-dev @angular-devkit/build-angular
 ```
+
+<h6><p> Using @ViewChild in Angular 9+ </p> </h6>
+
+```ts
+  @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef; // For Angular 9
+```
+
+<h6><p> Bootstrap 3 Installation </p> </h6>
+
+```sh
+  npm install --save bootstrap@3
+``` 
+
+
