@@ -3,14 +3,11 @@
     <div class="col-xs-12">
       <button class="btn btn-primary" (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
       <br><br>
-      <ul class="list-group"> 
+      <ul class="list-group">
         <div *ngIf="onlyOdd">Odds
-          <li 
-          class="list-group-item" 
-          [ngClass]="{odd: odd % 2 !== 0}"
-          [ngStyle]="{backgroundColor: odd % 2 !== 0 ? 'orange' : 'transparent'}"
-          *ngFor="let odd of oddNumbers">
-           {{odd}}
+          <li class="list-group-item" [ngClass]="{odd: odd % 2 !== 0}"
+            [ngStyle]="{backgroundColor: odd % 2 !== 0 ? 'orange' : 'transparent'}" *ngFor="let odd of oddNumbers">
+            {{odd}}
           </li>
         </div>
         <!-- <div *ngIf="!onlyOdd"> Evens
@@ -21,7 +18,7 @@
           *ngFor="let even of evenNumbers">
             {{even}}
           </li>
-        </div> -->
+        </div>
         <ng-template [ngIf]="!onlyOdd"> Evens
           <div>
             <li 
@@ -32,10 +29,18 @@
               {{even}}
             </li>
           </div>
-        </ng-template>
+        </ng-template> -->
+
+        <div *appUnless="onlyOdd"> Evens
+          <li class="list-group-item" [ngClass]="{odd: even % 2 !== 0}"
+            [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'orange' : 'transparent'}" *ngFor="let even of evenNumbers">
+            {{even}}
+          </li>
+        </div>
+
       </ul>
       <p appBasicHighlight>Style with basic directive</p>
-     
+
       <!-- Ways to binding to directives   -->
 
       <!-- <p 
@@ -43,10 +48,7 @@
       [defaultColor]="'white'"
       [highlightColor]="'cyan'">Style with better directive</p> -->
 
-      <p 
-      appBetterHighlight 
-      defaultColor="white"
-      [appBetterHightlight]="'cyan'">Style with better directive</p>
+      <p appBetterHighlight defaultColor="white" [appBetterHightlight]="'cyan'">Style with better directive</p>
     </div>
   </div>
 </div>
