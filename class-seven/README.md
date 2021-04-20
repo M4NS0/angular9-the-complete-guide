@@ -4,7 +4,7 @@
 ### Addings: ###
 
 ```sh
-    new file:   src/app/unless.directive.ts         # see in line 9: @Input() set
+        new file:   src/app/unless.directive.ts         # see in line 9: @Input() set
 ```
 
 ### Changes on: ###
