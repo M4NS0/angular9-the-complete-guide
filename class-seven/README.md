@@ -1,16 +1,16 @@
-## Building a Structural Directive ##
+## Understanding ngSwitch ##
+
+
+### Changes on: ###
+```sh
+        modified:   src/app/app.component.html          # line 26 to 31
+        modified:   src/app/app.component.ts            # line 12
+```
+
 
 
 ### Addings: ###
 
 ```sh
-        new file:   src/app/unless.directive.ts         # see in line 9: @Input() set
+
 ```
-
-### Changes on: ###
-```sh
-        modified:   src/app/app.component.html      # lines 13 to 39
-        modified:   src/app/app.module.ts           # line 14
-```
-
-
