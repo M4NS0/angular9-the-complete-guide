@@ -1,10 +1,12 @@
-import { Directive, ElementRef, HostBinding, HostListener, OnInit, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appBetterHighlight]'
 })
 export class BetterHighlightDirective implements OnInit{
-  @HostBinding('style.color') color: string = 'black';
+  @Input() defaultColor: string = 'white'
+  @Input('appBetterHightlight') highlightColor: string = '#33aeb7' // alias
+  @HostBinding('style.color') color: string;
 
   constructor(private elementRef: ElementRef, private renderer:  Renderer2) { }
 
@@ -14,19 +16,23 @@ export class BetterHighlightDirective implements OnInit{
     this.renderer.setStyle(this.elementRef.nativeElement, 'backgroundColor', '#337AB7');
     this.renderer.setStyle(this.elementRef.nativeElement, 'padding', '5px');
     this.renderer.setStyle(this.elementRef.nativeElement, 'borderRadius', '5px');
-    this.renderer.setStyle(this.elementRef.nativeElement, 'color', 'white');
+    // this.renderer.setStyle(this.elementRef.nativeElement, 'color', 'white');
     this.renderer.setStyle(this.elementRef.nativeElement, 'display', 'inline-block');
+    this.color = this.defaultColor;
 
   }
   
 
   @HostListener('mouseenter') mouseover(eventData: Event) {
     // this.renderer.setStyle(this.elementRef.nativeElement, 'color', '#33aeb7');
-    this.color = '#33aeb7'
+    // this.color = '#33aeb7'
+    this.color = this.highlightColor;
   }
 
   @HostListener('mouseleave') mouseleave(eventData: Event) {
     // this.renderer.setStyle(this.elementRef.nativeElement, 'color', 'white');
-    this.color = 'white'
+    // this.color = 'white'
+    this.color = this.defaultColor;
+
   }
 }
