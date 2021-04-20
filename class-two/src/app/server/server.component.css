@@ -1,0 +1,16 @@
+p {
+    margin: 10px;
+}
+
+h4 {
+    text-align: center;
+    padding: 5px;
+}
+.online {
+    color: #155724;
+    border: solid 1px #155724;
+}
+.offline {
+    color: #721C24;
+    border: solid 1px #721C24;
+}

@@ -1,0 +1,67 @@
+<input 
+type="text" 
+class="form-control" 
+(input)="onUpdateServerName($event)">
+
+<div> <i> Using Event binding </i>
+  <span class="glyphicon glyphicon-arrow-up"></span>
+</div>
+
+<br />
+
+<div>
+  <span class="glyphicon glyphicon-arrow-down">
+  </span> <i> Using Two-way binding </i>
+</div>
+
+<input 
+type="text" 
+class="form-control" 
+[(ngModel)]="serverName">
+
+<br />
+
+<div class="table" style="margin-top: 20px;transform: translateY(20px);">
+  <tbody>
+    <tr>
+      <th scope="row">
+        <button class="btn btn-primary" 
+        (click)="onCreateServer()" 
+        [disabled]="!allowNewServer">Add Server</button>
+      </th>
+      <td>
+        <p *ngIf="serverCreated === true" 
+        style="padding-top:7px;">Server was creater, server name is: {{serverName}}
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</div>
+
+
+<hr>
+<label>
+  <app-server *ngFor="let server of servers"></app-server>
+</label>
+
+<!-- <p>{{serverCreationStatus}}</p> -->
+<!-- <p [innerText]="allowNewServer"></p> -->
+
+
+
+<!-- <div *ngIf="serverCreated === true; else noserver">
+  <hr>
+  <h4>{{serverName}}</h4>
+  <hr>
+</div>
+
+<ng-template #noserver>
+  <hr>
+  <h4>
+    <span class="glyphicon glyphicon-remove" style="margin-right: 10px;"> </span>
+    <span> <i>No server</i></span>
+  </h4>
+  <hr>
+</ng-template> -->
+
+
