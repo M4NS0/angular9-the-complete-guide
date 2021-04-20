@@ -1,15 +1,15 @@
-## Using HostListener to Listen to Host Events ##
+## Using HostBinding to Bind to Host Properties ##
 
 
 
 
 ### Changes on: ###
 ```sh
-    modified:   class-seven/src/app/better-highlight/better-highlight.directive.ts          # lines 22 to 28 
-```
+    modified:   class-seven/src/app/better-highlight/better-highlight.directive.ts          # lines 7,25,30
 
 
 ### Addings: ###
 
 ```sh
+
 ```
