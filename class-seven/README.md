@@ -5,7 +5,7 @@
 
 ### Changes on: ###
 ```sh
-        modified:   class-seven/src/app/app.component.html          # lines 16 to 35
+        modified:   class-seven/src/app/app.component.html          # lines 16 to 35  (ng-template)
 ```
 
 ### Addings: ###
