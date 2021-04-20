@@ -12,6 +12,8 @@
 | Class-five                     | Components & Databinding Deep Dive                    |
 | Class-five-assignment-solution | Assignment Solution                                   |
 | Class-six                      | Example Project part II - Components and data Binding |
+| Class-seven                    | Directives Deep Dive                                  |
+| Class-eight                    | Example Project part III - Directives                 |
 
 <br/>
 <h6><p><i>Repositories above includes Branches with sub-classes</i></p></h6>
