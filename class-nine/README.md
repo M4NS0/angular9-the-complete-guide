@@ -3,7 +3,7 @@
 ### Addings ###
 
 ```sh
-    console.log('A server status changed, new status: ' + accountStatus);
+    new file:   class-nine/src/app/logging_service.ts
 ```
 
 ### Changes on: ###
