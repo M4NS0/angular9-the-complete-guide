@@ -2,9 +2,6 @@
 
 ### Modified ###
 ```sh 
-        modified:   src/app/app.module.ts                                               # line 32
-        modified:   src/app/shopping-list/shopping-edit/shopping-edit.component.ts      # lines 13, 23, 24
-        modified:   src/app/shopping-list/shopping-list-service.ts                      # all
-        modified:   src/app/shopping-list/shopping-list.component.html                  # lines 3 to 7
-        modified:   src/app/shopping-list/shopping-list.component.ts                    # lines 11 to 15, 17, 19 to 25
+        modified:   src/app/shopping-list/shopping-list-service.ts      # lines 5 and 17    
+        modified:   src/app/shopping-list/shopping-list.component.ts    # line 13, lines 16 to 23
 ```
