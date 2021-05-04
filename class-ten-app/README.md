@@ -1,9 +1,10 @@
-## Using a Service for Cross-Component Communication ## 
+## Adding the Shopping List Service ## 
 
 ### Modified ###
 ```sh 
-        modified:   src/app/recipes/recipe-list/recipe-list.component.html      # lines 7 to 18
-        modified:   src/app/recipes/recipe-list/recipe-list.component.ts        # 11, 17, 20 to 22
-        modified:   src/app/recipes/recipes.component.html                      # lines 2 to 9
-        modified:   src/app/recipes/recipes.component.ts                        # lines 13, 16 to 21
+        modified:   src/app/app.module.ts                                               # line 32
+        modified:   src/app/shopping-list/shopping-edit/shopping-edit.component.ts      # lines 13, 23, 24
+        modified:   src/app/shopping-list/shopping-list-service.ts                      # all
+        modified:   src/app/shopping-list/shopping-list.component.html                  # lines 3 to 7
+        modified:   src/app/shopping-list/shopping-list.component.ts                    # lines 11 to 15, 17, 19 to 25
 ```
