@@ -4,11 +4,17 @@
   </div>
 </div>
 <hr>
+<!-- <div class="row">
+  <div class="col-xs-12">
+    <app-recipe-item *ngFor="let recipeElement of recipes" [recipe]="recipeElement"
+      (recipeSelected)="onReceipeSelected(recipeElement)"></app-recipe-item>
+  </div>
+</div> -->
 <div class="row">
   <div class="col-xs-12">
-    <app-recipe-item *ngFor="let recipeElement of recipes"
-    [recipe]="recipeElement"
-    (recipeSelected)="onReceipeSelected(recipeElement)"></app-recipe-item> 
-    <!-- sending component -->
+    <app-recipe-item 
+    *ngFor="let recipeElement of recipes" 
+    [recipe]="recipeElement">
+    </app-recipe-item>
   </div>
 </div>
